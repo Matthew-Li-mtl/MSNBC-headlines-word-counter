@@ -8,15 +8,6 @@ import os
 
 import scrapy
 
-import requests
-import random
-import time
-
-# C:\Users\ml113\Matthew\Scripts\Web_scraping\Scrapy\Scrapy_playwright\MSNBC\msnbc\msnbc
-# C:\Users\ml113\Matthew\Scripts\Web_scraping\Scrapy\Scrapy_playwright\MSNBC\.venv\Scripts
-
-#sys.path.append("C:\\Users\\ml113\\Matthew\\Scripts\\Web_scraping\\Scrapy\\Scrapy_playwright\\MSNBC\\msnbc\\msnbc\\additional_scripts") # make responsive to cwd later
-
 print(f"{os.getcwd()}")
 print(sys.path)
 
