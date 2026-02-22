@@ -4,7 +4,7 @@ Scrapes ms.now and counts the repeats of words in across all headlines on the fr
 # Usage
 Getting the word data happens in two steps:
 1) Scraping ms.now
-2) Running word_data.py to process the scraped data
+2) Running word_data_from_json.py to process the scraped data
 
 To scrape, set up a virtual environment then use this in the terminal:
 ```
@@ -14,7 +14,7 @@ scrapy crawl msnbc -O msnbc.json
 Then run word_data.py as a standalone Python file.
 
 # Output
-word_data.py will create two types of files:
+word_data_from_json.py will create two types of files:
  - Word count json
  - Raw word repeat txt
 
@@ -27,13 +27,13 @@ The data will also be appended to the aggregate files in /msnbc/msnbc/word_data/
 
 ## Aggregates
 
-Aggregate output files store data from multiple scrapes. Simply repeat the two step process at the top with RESET_AGGREGATES=False in word_data.py.
+Aggregate output files store data from multiple scrapes. Simply repeat the two step process at the top with RESET_AGGREGATES=False in word_data_from_json.py.
 
-To reset the aggregates (such that they only contain the most recent scrape of data), set RESET_AGGREGATES=True in word_data.py then run word_data.py.
+To reset the aggregates (such that they only contain the most recent scrape of data), set RESET_AGGREGATES=True in word_data.py then run word_data_from_json.py.
 
 Run save_aggregates.py to a copy of the aggregate files with a timestamp.
 
-You may also toggle WRITE_TO_AGGREGATES in word_data.py to store the data from the most recent scrape without appending it to the aggregate data.
+You may also toggle WRITE_TO_AGGREGATES in word_data_from_json.py to store the data from the most recent scrape without appending it to the aggregate data.
 
 ## Word clouds
 
