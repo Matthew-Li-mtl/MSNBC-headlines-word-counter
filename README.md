@@ -21,7 +21,7 @@ word_data.py will create two types of files:
 Word count files store each unique word and their repetitions.
 Raw word repeat files simply sort the words by their frequency. These can be pasted into word cloud generators as raw data.
 
-The data from the most recent scrape will be stored as these two files in msnbc/msnbc/word_data/output
+The data from the most recent scrape will be stored as these two files in msnbc/msnbc/word_data/output/word_count_data and msnbc/msnbc/word_data/output/raw_word_repeats
 
 The data will also be appended to the aggregate files in /msnbc/msnbc/word_data/output, and maintain their formatting.
 
