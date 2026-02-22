@@ -1,0 +1,9 @@
+
+
+word_data.py ran at 2026 Feb 21 16 12 46
+RESET_AGGREGATES = True
+WRTIE_TO_AGGREGATES = True
+Appended data for 395 unique words from most recent scrape.
+There are data for 395 unique words in the aggregate.
+Most common word from most recent scrape: the (19)
+Most common word in aggregate: the (38)
